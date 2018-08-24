@@ -1,8 +1,6 @@
 # Naza
 Naza: secure, private, untraceable and fast cryptocurrency
 
-# naza Core
-
 ## About
 
 Welcome to the repository of naza Core. Here you will find source code, instructions, wiki resources, and integration tutorials.
