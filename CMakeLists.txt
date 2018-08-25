@@ -10,9 +10,6 @@ project(naza_core)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_C_STANDARD 11)
 
-#set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wl,--stack,99999999")
-SET (CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /STACK:13421299768")
-SET (CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /HEAP:1342129768")
 
 # message(STATUS "Nazad profile: According to cmake, sizeof(void *) == " ${CMAKE_SIZEOF_VOID_P})
 option(USE_INSTRUMENTATION "For testing - builds with address sanitizer instrument" OFF)
