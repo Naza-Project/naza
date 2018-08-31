@@ -6,8 +6,8 @@
 
 #pragma once
 
-#define nazacoin_VERSION_WINDOWS_COMMA 2, 18, 8, 23
-#define nazacoin_VERSION_STRING "2.1.4.8.23"
+#define nazacoin_VERSION_WINDOWS_COMMA 2, 18, 8, 31
+#define nazacoin_VERSION_STRING "2.1.5.8.31"
 
 #ifndef RC_INVOKED 
 
