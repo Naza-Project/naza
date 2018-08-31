@@ -565,9 +565,9 @@ bool BlockChain::read_header(const Hash &bid, api::BlockHeader *header, Height h
 		*header = cit->second;
 		return true;
 	}
-	if (header_cache.size() > HEADER_CACHE_MAX_SIZE) {
-		std::cout << "HEADER_CACHE_MAX_SIZE cleared" << std::endl;
-		header_cache.clear();  
+	if (header_cache.size() > largest_window() * 10) {
+		m_log(logging::INFO) << "BlockChain header cache reached max size and cleared" << std::endl;
+		header_cache.clear();  // very simple policy
 	}
 	BinaryArray rb;
 	auto key = HEADER_PREFIX + DB::to_binary_key(bid.data, sizeof(bid.data)) + HEADER_SUFFIX;
